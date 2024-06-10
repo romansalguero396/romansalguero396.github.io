@@ -1,0 +1,44 @@
+.promociones {
+    width: 70%;
+    display: inline-block; /* Cambia float: left; a display: inline-block; */
+    margin-left: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.promocion {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.promocion img {
+    max-width: 100%; /* Ajustar el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Permitir que la altura se ajuste automáticamente para mantener la relación de aspecto */
+    border-radius: 5px;
+}
+
+.promocion h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.promocion p {
+    margin-top: 5px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .promociones {
+        padding: 10px; /* Reducir el relleno */
+    }
+
+    .promocion {
+        padding: 5px; /* Reducir el relleno */
+    }
+
+    .promocion h3 {
+        font-size: 1em; /* Reducir el tamaño de fuente del título */
+    }
+}

@@ -1,0 +1,306 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: hsla(144, 100%, 47%, 0.692); 
+    background: -webkit-linear-gradient(to right, hsla(270, 2%, 43%, 0.589), hsla(193, 4%, 46%, 0.61)), url(img/farmacia.jpg); 
+    background: linear-gradient(to right, hsla(280, 4%, 43%, 0.575), hsla(196, 4%, 52%, 0.589)), url(img/farmacia.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav > li {
+    position: relative;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.nav a:hover {
+    color: #ffae00;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    width: 100%;
+}
+
+.nav li ul a {
+    color: white;
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav li ul a:hover {
+    color: #ff9a02;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav > li {
+        position: static;
+    }
+
+    .nav a {
+        padding: 10px;
+    }
+
+    .nav li ul {
+        position: static;
+        display: none;
+    }
+
+    .nav li:hover ul {
+        display: block;
+    }
+}   
+footer {
+        text-align: center;
+        background-color: rgb(0, 158, 250);
+        padding: 10px;
+    }
+
+
+
+    
+ .Inicio {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+.content {
+        flex: 3; /* Ajusta este valor para cambiar el ancho relativo del contenido principal */
+        padding-right: 20px; /* Espacio entre el contenido y el aside */
+    }
+    
+    aside {
+        flex: 1;
+        padding: 20px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        aside {
+            flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+            text-align: center; /* Centra el texto horizontalmente */
+            padding: 10px; 
+            }
+    }
+
+    
+ .Inicio-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.Inicio-img {
+    max-width: 100%;
+}
+
+.producto-contenedor{
+display:grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+max-width: 1200px;
+}
+
+ 
+
+
+
+.producto-carta {
+    background-color: #ffffff;
+    border: 1px  #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto-carta img {
+    width: 100%;
+    height: auto;
+}
+
+.producto-info {
+    padding: 15px;
+}
+
+.producto-info .price {
+    color: #27ae60;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto-info .presentacion,
+.producto-info .descripcion {
+    color: #555555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.producto-info .presentacion,
+.producto-info .descripcion:hover{
+    color:blue; 
+}
+
+@media(max-width: 992px) {
+    .producto-contenedor{
+        
+        grid-template-columns: repeat(4,1fr);   
+    }
+    
+}
+@media(max-width: 768px) {
+    .producto-contenedor{
+        
+        grid-template-columns: repeat(2,1fr);   
+    }
+    
+}
+@media(max-width: 480px) {
+    .producto-contenedor{
+        
+        grid-template-columns: repeat(1,1fr);   
+    }
+    
+}
+/* Estilos generales para el contenedor del formulario */
+.form-container {
+    max-width: 600px; /* Limita el ancho del contenedor para que se vea bien en dispositivos móviles */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para el formulario */
+.form-container form {
+    display: grid;
+    gap: 10px;
+}
+
+.form-container form label {
+    font-weight: bold;
+}
+
+.form-container form input,
+.form-container form textarea,
+.form-container form select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón de enviar */
+.form-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+    h3 {
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+    }
+}
+
+.promociones {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+.promocion {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.imagen-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos de manera vertical */
+}
+
+.imagen-container img {
+    max-width: 100%; /* Establece un ancho máximo del 100% */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.promocion h3,
+.promocion p {
+    margin-top: 10px;
+}
+    

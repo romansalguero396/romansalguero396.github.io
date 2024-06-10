@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+    <title>Farmacia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3 class="title"> Farmacia 24 Hrs</h3>
+            <ul class="nav">
+                <li><a href="proyecto.html">Inicio.</a></li>
+                <li>
+                    <a href="#">Acerca</a>
+                    <ul>
+                        <li><a href="acerca.html">Misión.</a></li>
+                        <li><a href="Vision.html">Visión.</a></li>
+                    </ul>
+                </li>
+                <li><a href="Promiciones.html">Promociones.</a></li>
+                <li><a href="Servicios.html">Servicios.</a></li>
+                <li>
+                    <a href="#">Productos.</a>
+                    <ul>
+                        <li><a href="vitaminas.html">Vitaminas.</a></li>
+                        <li><a href="Productos.html">Material de curación.</a></li>
+                        <li><a href="SaludSexual.html"> Salud Sexual.</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto.</a></li>
+            </ul>
+        </nav>
+     
+    <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(251, 253, 252);"></path></svg></div>
+  </header>
+  <div class="form-container">
+      <h2>Formulario de Contacto</h2>
+      <form>
+          <label for="asunto">Selecciona un asunto *</label>
+          <select id="asunto" name="asunto" required>
+              <option value="">Escoge una opción</option>
+              <option value="franquicias">Franquicias</option>
+              <option value="quejas">Quejas</option>
+              <option value="productos_proveedor">Productos (Proveedor)</option>
+              <option value="productos_farmacias">Productos (Farmacias)</option>
+              <option value="sugerencias">Sugerencias</option>
+              <option value="otros">Otros</option>
+          </select>
+  
+          <label for="nombre">Nombre *</label>
+          <input type="text" id="nombre" name="nombre" required>
+  
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+  
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div style="overflow:hidden; padding-top:56.25%; position:relative; height:0;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14878.114549082507!2d-98.88612599999999!3d21.210875999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1717980763416!5m2!1ses-419!2smx" 
+        width="100%" 
+        height="100%" 
+        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+    <footer>
+        <p>Farmacia 24hr. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
